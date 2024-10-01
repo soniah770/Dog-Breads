@@ -1,6 +1,5 @@
-# Spacex-Launches
+# Dog-Breads
 
-setup and configuration with TypeScript, NextJS,MUI and SWR .
 
 | Tool       | Purpose                                            |
 | ---------- | -------------------------------------------------- | --- |
