@@ -10,6 +10,21 @@ interface DogBreedCardProps {
   imageUrl: string
 }
 
+const DetailRow: React.FC<{ label: string; value: string }> = ({
+  label,
+  value,
+}) => (
+  <Box sx={{ marginBottom: '4px' }}>
+    <Typography
+      variant="body2"
+      color="textSecondary"
+      sx={{ fontWeight: 400, fontSize: '14px' }}
+    >
+      <strong>{label}:</strong> {value}
+    </Typography>
+  </Box>
+)
+
 const DogBreedCard: React.FC<DogBreedCardProps> = ({
   name,
   weight,
@@ -19,7 +34,6 @@ const DogBreedCard: React.FC<DogBreedCardProps> = ({
   imageUrl,
 }) => {
   const [errorImage, setErrorImage] = useState(false)
-
   const placeholderImage = '/images/placeholder.png'
 
   return (
@@ -53,42 +67,11 @@ const DogBreedCard: React.FC<DogBreedCardProps> = ({
             {name}
           </Typography>
         </Box>
-        <Box sx={{ marginBottom: '4px' }}>
-          <Typography
-            variant="body2"
-            color="textSecondary"
-            sx={{ fontWeight: 400, fontSize: '14px' }}
-          >
-            <strong>Weight:</strong> {weight} kg
-          </Typography>
-        </Box>
-        <Box sx={{ marginBottom: '4px' }}>
-          <Typography
-            variant="body2"
-            color="textSecondary"
-            sx={{ fontWeight: 400, fontSize: '14px' }}
-          >
-            <strong>Temperament:</strong> {temperament}
-          </Typography>
-        </Box>
-        <Box sx={{ marginBottom: '4px' }}>
-          <Typography
-            variant="body2"
-            color="textSecondary"
-            sx={{ fontWeight: 400, fontSize: '14px' }}
-          >
-            <strong>Origin:</strong> {origin || 'Unknown'}
-          </Typography>
-        </Box>
-        <Box>
-          <Typography
-            variant="body2"
-            color="textSecondary"
-            sx={{ fontWeight: 400, fontSize: '14px' }}
-          >
-            <strong>Life Span:</strong> {lifeSpan} years
-          </Typography>
-        </Box>
+
+        <DetailRow label="Weight" value={`${weight} kg`} />
+        <DetailRow label="Temperament" value={temperament} />
+        <DetailRow label="Origin" value={origin || 'Unknown'} />
+        <DetailRow label="Life Span" value={`${lifeSpan} years`} />
       </CardContent>
     </Card>
   )
