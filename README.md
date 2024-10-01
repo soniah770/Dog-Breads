@@ -1,11 +1,12 @@
 # Dog-Breads
 
+setup and configuration with TypeScript, NextJS,MUI and SWR  .
 
-| Tool       | Purpose                                            |
-| ---------- | -------------------------------------------------- | --- |
-| Nextjs     | A JavaScript Framwork for building user interfaces |
-| TypeScript | Static typing for JavaScript                       |     |
-| SWR        | Data fetching and caching                          |
+| Tool                 | Purpose                                           |
+| -------------------- | ------------------------------------------------- |
+| NextJS               | A JavaScript Framwork for building user interfaces |
+| TypeScript           | Static typing for JavaScript                         |
+| SWR                  | Data fetching and caching   
 
 ## Getting Started
 
