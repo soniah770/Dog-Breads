@@ -16,18 +16,18 @@ setup and configuration with TypeScript, NextJS,MUI and SWR  .
 git clone https://github.com/soniah770/Dog-Breads.git
 cd Dog-Breads
 ```
-# Setup and Installation
+### Setup and Installation
 
-# 1. Install the dependencies
+### 1. Install the dependencies
 npm install
 
-# 2. Run the development server
+### 2. Run the development server
 npm run dev
 
-# 3. Build for production
+### 3. Build for production
 npm run build
 
-# 4. Preview the production build
+### 4. Preview the production build
 npm run start
 
 ### Features
