@@ -1,6 +1,5 @@
 # Dog-Breads
 
-
 | Tool       | Purpose                                            |
 | ---------- | -------------------------------------------------- | --- |
 | Nextjs     | A JavaScript Framwork for building user interfaces |
