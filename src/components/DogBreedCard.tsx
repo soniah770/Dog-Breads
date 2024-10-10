@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Card, CardMedia, CardContent, Typography } from '@mui/material';
+import { Card, CardMedia, CardContent, Typography, } from '@mui/material';
 import DetailRow from './DetailRow';
 
 interface DogBreedCardProps {

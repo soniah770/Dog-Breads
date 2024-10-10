@@ -1,3 +1,4 @@
+// Home.tsx
 import React, { Suspense, lazy } from 'react';
 import { Container, Grid, Typography, Box, CircularProgress } from '@mui/material';
 import { useFetchBreeds } from '../hooks/useFetchBreeds';
@@ -21,7 +22,7 @@ const Home: React.FC = () => {
       <Container>
         <Box display="flex" justifyContent="flex-start" alignItems="center" mb={4}>
           <Typography variant="h6" sx={{ fontWeight: 500, marginRight: '8px' }}>Breeds:</Typography>
-          <Typography variant="h6" sx={{ color: '#666666', fontWeight: 300 }}>{data.length}</Typography>
+          <Typography variant="h6" sx={{ color: '#666666', fontWeight: 300 }}>{data?.length || 0}</Typography>
         </Box>
 
         <Suspense fallback={<CircularProgress />}>
