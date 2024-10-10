@@ -1,10 +1,12 @@
-# Dog-Breads
+# Dog-Breeds
 
-| Tool       | Purpose                                            |
-| ---------- | -------------------------------------------------- | --- |
-| Nextjs     | A JavaScript Framwork for building user interfaces |
-| TypeScript | Static typing for JavaScript                       |     |
-| SWR        | Data fetching and caching                          |
+| Tool       | Purpose                                             |
+| ---------- | --------------------------------------------------- |
+| Next.js    | A JavaScript framework for building user interfaces |
+| TypeScript | Static typing for JavaScript                        |
+| SWR        | Data fetching and caching                           |
+| Axios      | Promise-based HTTP client for making API requests   |
+| Mui        | Component library for styling                       |
 
 ## Getting Started
 
@@ -13,7 +15,7 @@
 ```bash
 git clone https://github.com/soniah770/Dog-Breads.git
 cd Dog-Breads
-```
+
 
 ### Features
 
