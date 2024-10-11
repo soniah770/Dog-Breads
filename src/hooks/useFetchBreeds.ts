@@ -14,8 +14,12 @@ export interface Breed {
 
 const fetcher = (url: string) => axios.get(url).then((res) => res.data);
 
-export const useFetchBreeds = () => {
-  const { data, error } = useSWR<Breed[]>('https://api.thedogapi.com/v1/breeds', fetcher);
+// Accept page and limit for pagination
+export const useFetchBreeds = (page: number = 1, limit: number = 12) => {
+  const { data, error } = useSWR<Breed[]>(
+    `https://api.thedogapi.com/v1/breeds?limit=${limit}&page=${page}`,
+    fetcher
+  );
   return {
     data,
     error,
